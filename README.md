@@ -1,4 +1,4 @@
-# Predicting Poverty Levels in Nigeria from Satellite Imagery
+# Predicting Poverty Levels from Satellite Imagery in Nigeria using Deep Neural Networks
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
 [![TensorFlow](https://img.shields.io/badge/TensorFlow-2.0%2B-orange)](https://www.tensorflow.org/)
