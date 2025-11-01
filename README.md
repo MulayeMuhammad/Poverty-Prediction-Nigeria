@@ -191,7 +191,7 @@ Output: Poverty Level Prediction
 ## 🗺️ Sample Visualizations
 
 ### Poverty Distribution Map
-<img src="figure1.png" width="600" alt="Income and Democracy Cross-Section">
+<img src="pov_map" width="600" alt="Poverty Distribution Map">
 
 ---
 
