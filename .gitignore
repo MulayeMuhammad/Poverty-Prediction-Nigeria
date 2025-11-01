@@ -1,0 +1,27 @@
+```
+# Large satellite imagery files
+archive/*.jpg
+archive/*.jpeg
+archive/*.png
+archive/*.tif
+
+archive(1)/*.jpg
+archive(1)/*.jpeg
+archive(1)/*.png
+archive(1)/*.tif
+
+# Model files
+models/*.h5
+models/*.keras
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# Temp
+*.tmp
+*~
