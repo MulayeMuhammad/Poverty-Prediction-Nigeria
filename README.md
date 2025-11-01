@@ -106,50 +106,6 @@ Output: Poverty Level Prediction
 
 ---
 
-## 📁 Project Structure
-
-```
-Poverty_Nig/
-│
-├── data/
-│   ├── satellite_images/           # Raw satellite imagery (large files)
-│   ├── poverty_data/                # Poverty statistics from National Bureau
-│   │   ├── poverty_stats.csv
-│   │   └── geographic_coordinates.csv
-│   └── labeled_images/              # Annotated images with poverty levels
-│
-├── notebooks/
-│   ├── 01_data_exploration.ipynb    # EDA and data visualization
-│   ├── 02_data_preprocessing.ipynb  # Image preprocessing and augmentation
-│   ├── 03_model_training.ipynb      # CNN model training
-│   ├── 04_model_evaluation.ipynb    # Performance evaluation
-│   └── 05_prediction_mapping.ipynb  # Poverty map generation
-│
-├── src/
-│   ├── data_loader.py               # Data loading utilities
-│   ├── preprocessing.py             # Image preprocessing functions
-│   ├── model.py                     # CNN architecture
-│   ├── train.py                     # Training pipeline
-│   ├── evaluate.py                  # Evaluation metrics
-│   └── predict.py                   # Inference pipeline
-│
-├── models/
-│   ├── best_model.h5                # Trained model weights
-│   ├── model_architecture.json      # Model architecture
-│   └── training_history.csv         # Training logs
-│
-├── results/
-│   ├── poverty_maps/                # Generated poverty maps
-│   ├── performance_metrics.csv      # Model performance
-│   └── visualizations/              # Plots and charts
-│
-├── requirements.txt                 # Python dependencies
-├── README.md                        # This file
-├── LICENSE
-└── .gitignore
-```
-
----
 
 ## 🔬 Methodology
 
@@ -196,13 +152,6 @@ Poverty_Nig/
 
 ---
 
-## 📈 Expected Results
-
-### Performance Metrics
-- **Accuracy**: [To be filled after training]
-- **Precision**: [To be filled]
-- **Recall**: [To be filled]
-- **F1-Score**: [To be filled]
 
 ### Deliverables
 1. ✅ Trained CNN model for poverty prediction
@@ -212,61 +161,6 @@ Poverty_Nig/
 
 ---
 
-## 🚀 Getting Started
-
-### Prerequisites
-
-```bash
-# Python 3.8+
-python --version
-
-# Create virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-# Install dependencies
-pip install -r requirements.txt
-```
-
-### Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/MulayeMuhammad/Poverty-Prediction-Nigeria.git
-cd Poverty-Prediction-Nigeria
-
-# Install dependencies
-pip install -r requirements.txt
-```
-
-### Usage
-
-#### 1. Data Preparation
-```python
-# Load and preprocess images
-python src/preprocessing.py --input data/satellite_images/ --output data/processed/
-
-# Verify data annotations
-python src/data_loader.py --verify
-```
-
-#### 2. Model Training
-```python
-# Train the model
-python src/train.py --epochs 100 --batch_size 32 --model_type cnn
-
-# Or use the Jupyter notebook
-jupyter notebook notebooks/03_model_training.ipynb
-```
-
-#### 3. Evaluation
-```python
-# Evaluate on test set
-python src/evaluate.py --model models/best_model.h5 --data data/test/
-
-# Generate poverty maps
-python src/predict.py --model models/best_model.h5 --region all
-```
 
 ---
 
@@ -299,49 +193,9 @@ python src/predict.py --model models/best_model.h5 --region all
 ### Poverty Distribution Map
 [Insert poverty map visualization here]
 
-### Model Performance
-[Insert accuracy curves, confusion matrix]
-
-### Regional Analysis
-[Insert regional breakdown charts]
-
 ---
 
-## 🔮 Future Work
 
-- [ ] Expand to other African countries
-- [ ] Incorporate additional data sources (nighttime lights, mobile phone data)
-- [ ] Develop real-time monitoring dashboard
-- [ ] Implement ensemble models for improved accuracy
-- [ ] Create API for easy integration with policy tools
-- [ ] Multi-temporal analysis to track poverty trends over time
-
----
-
-## 📊 Technical Details
-
-### Model Hyperparameters
-```python
-{
-    "input_shape": (224, 224, 3),
-    "num_classes": [Specify: e.g., 3 for low/medium/high],
-    "batch_size": 32,
-    "epochs": 100,
-    "learning_rate": 0.001,
-    "optimizer": "Adam",
-    "loss": "categorical_crossentropy"
-}
-```
-
-### Data Augmentation
-```python
-- Rotation: ±20 degrees
-- Horizontal/Vertical flip
-- Brightness adjustment: ±20%
-- Zoom: ±15%
-```
-
----
 
 ## ⚠️ Important Notes
 
@@ -401,14 +255,6 @@ __pycache__/
 
 ---
 
-## 🤝 Contributing
-
-Contributions are welcome! Please:
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push to the branch
-5. Open a Pull Request
 
 ---
 
@@ -449,21 +295,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 📊 Project Status
 
-- [x] Data collection
-- [x] Data annotation
-- [ ] Model training (in progress)
-- [ ] Model evaluation
-- [ ] Poverty map generation
-- [ ] Documentation
-- [ ] Deployment
-
----
-
-<p align="center">
-  <i>⭐ If you find this project useful for poverty research or policy making, please consider giving it a star!</i>
-</p>
 
 <p align="center">
   <strong>Building a data-driven approach to poverty alleviation in Africa 🌍</strong>
